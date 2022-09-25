@@ -9,7 +9,7 @@ package Modelo;
  *
  * @author Massingue
  */
-public class ContaPoupanca extends ContaBancaria {
+public class ContaPoupanca extends ContaBancaria implements Imprimivel {
     private double limite;
 
     public double getLimite() {
@@ -18,6 +18,11 @@ public class ContaPoupanca extends ContaBancaria {
 
     public void setLimite(double limite) {
         this.limite = limite;
+    }
+
+    @Override
+    public void mostrarDados() {
+          
     }
     
     

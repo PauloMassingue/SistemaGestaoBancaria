@@ -9,7 +9,7 @@ package Modelo;
  *
  * @author Massingue
  */
-public class ContaCorrente extends ContaBancaria {
+public  class ContaCorrente extends ContaBancaria implements Imprimivel  {
     private double taxaOperacao;
 
     public double getTaxaOperacao() {
@@ -19,5 +19,12 @@ public class ContaCorrente extends ContaBancaria {
     public void setTaxaOperacao(double taxaOperacao) {
         this.taxaOperacao = taxaOperacao;
     }
+
+    @Override
+    public void mostrarDados() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
     
 }
